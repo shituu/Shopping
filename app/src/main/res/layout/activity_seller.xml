@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yohoooo"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happy shopping"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TERMS AND CONDITIONS:"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:fontFamily="@font/aclonica"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/termsandconditions"
+        android:textSize="15dp"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/terms"
+        android:layout_margin="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm already a seller"
+        android:textSize="15dp"
+        android:textColor="#F12926"
+        app:layout_constraintTop_toBottomOf="@+id/conditions"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

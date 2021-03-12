@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout tools:context=".VerifyPhoneActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yohoooo">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="3dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happy shopping"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_shrashti"
+        android:layout_below="@+id/toolbar"/>
+
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/topview"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Wait for the code...."/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textView"
+        android:textColor="@color/colorPrimary"
+        android:text="The code will be detected automatically but if it is not detected you can put it below manually as well"
+        android:textAlignment="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="200dp" android:id="@+id/editTextCode" android:layout_centerHorizontal="true" android:layout_below="@id/textView1" android:maxLength="6" android:hint="enter code" android:digits="0123456789"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:background="@drawable/btn_background"
+        android:id="@+id/buttonSignIn" android:layout_centerHorizontal="true" android:layout_marginTop="20dp" android:layout_below="@id/editTextCode" android:textColor="#ffffff" android:text="Sign In" android:textAllCaps="false"/>
+
+    <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/progressbar" android:layout_centerHorizontal="true" android:layout_below="@id/buttonSignIn" android:visibility="gone"/>
+
+
+    <View
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_yukti"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

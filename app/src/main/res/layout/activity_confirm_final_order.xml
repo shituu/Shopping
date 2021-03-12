@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yohoooo">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="3dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happy shopping"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_shrashti"
+        android:layout_below="@+id/toolbar"
+       />
+
+       <TextView
+           android:id="@+id/txt"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="SHIPPING DETAILS"
+           android:layout_below="@+id/toolbar"
+           android:layout_marginTop="10dp"
+           android:textAlignment="center"
+           android:textColor="#FFFFFF"
+           android:textSize="25dp"
+           android:textStyle="bold" />
+
+       <EditText
+        android:id="@+id/shippment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="your Name"
+        />
+
+    <EditText
+        android:id="@+id/shippment_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippment_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:hint="your Phone Number"
+        />
+
+    <EditText
+        android:id="@+id/shippment_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippment_phone_number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="your Home Address"
+        />
+
+    <EditText
+        android:id="@+id/shippment_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippment_address"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="your City Name"
+        />
+
+
+    <Button
+        android:id="@+id/confirm_final_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:text="Proceed To Pay-->"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/check_box2"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/check_box1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash On Delivery"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:layout_below="@+id/payment_mode"
+        android:layout_marginLeft="17dp"
+        />
+
+       <ImageView
+           android:layout_width="24dp"
+           android:layout_height="24dp"
+           android:src="@drawable/googlepay"
+           android:layout_toRightOf="@+id/check_box2"
+           android:layout_below="@+id/check_box1"
+          android:layout_marginLeft="20dp"
+           android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/check_box2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google Pay"
+        android:layout_below="@+id/check_box1"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:layout_marginLeft="17dp"
+        />
+
+       <ImageView
+           android:layout_width="24dp"
+           android:layout_height="24dp"
+           android:src="@drawable/cod"
+           android:layout_toRightOf="@+id/check_box1"
+           android:layout_below="@+id/payment_mode"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="5dp"
+          />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/shippment_city">
+
+        <TextView
+            android:id="@+id/txt_total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount:"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txt_for_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_alignRight="@+id/txt_total_amount" />
+
+
+    </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Select Payment Mode:"
+           android:id="@+id/payment_mode"
+           android:layout_below="@+id/linear"
+           android:textSize="20dp"
+           android:padding="5dp"
+           android:layout_marginLeft="20dp"
+           android:textStyle="bold"
+           android:layout_marginTop="5dp"
+           android:textColor="@color/colorPrimaryDark"/>
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>

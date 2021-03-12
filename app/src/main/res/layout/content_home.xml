@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--    tools:context=".HomeActivity">-->
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/yohoooo"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+<!--    <TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:id="@+id/text_content"-->
+<!--    android:layout_below="@+id/toolbar"-->
+<!--    android:layout_marginLeft="5dp"-->
+<!--    android:text="Explore a Range Of "-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:textColor="#000"-->
+<!--    android:textStyle="bold"-->
+<!--    android:textSize="15dp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/text_content1"-->
+<!--        android:layout_below="@+id/text_content"-->
+<!--        android:layout_marginLeft="3dp"-->
+<!--        android:text=" Attractive "-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:fontFamily="@font/aclonica"-->
+<!--        android:textColor="#69A9A9"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="24sp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/text_content2"-->
+<!--        android:layout_below="@+id/text_content1"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:text=" Gifts"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:fontFamily="@font/aclonica"-->
+<!--        android:textColor="#69A9A9"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="24sp"-->
+<!--        />-->
+
+<!--    -->
+<!--    <ViewFlipper-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:id="@+id/flipper"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="3dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_below="@+id/toolbar"-->
+<!--        android:layout_gravity="center"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linear"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/flipper"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--       >-->
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn7"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="Share"-->
+<!--                    android:textColor="#000000" />-->
+
+
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn1"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="Teddy"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn2"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="Toys"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn3"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="Cups"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn4"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="Couples"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn5"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="Frames"-->
+<!--                    android:textColor="#000000" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn6"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/circle"-->
+<!--                    android:text="See All"-->
+<!--                    android:textColor="#000000" />-->
+
+
+<!--            </LinearLayout>-->
+<!--        </HorizontalScrollView>-->
+<!--    </LinearLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler_menu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/linear"-->
+<!--        android:scrollbars="vertical"-->
+<!--        android:layout_margin="5dp"-->
+<!--        >-->
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId="ca-app-pub-1493862650042827/8360972727">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgcart"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--       android:layout_marginTop="15dp"-->
+<!--        android:layout_marginRight="11dp"-->
+<!--        android:src="@drawable/nav_cart" />-->
+
+
+<!--</RelativeLayout>-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrontActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yohoooo"
+            tools:ignore="MissingConstraints"
+           >
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/imgcart"
+            android:layout_width="33dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/nav_cart"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-9dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_content"
+           app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginLeft="5dp"
+            android:text="Explore a Range Of "
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_content1"
+            app:layout_constraintTop_toBottomOf="@+id/text_content"
+            android:layout_marginLeft="3dp"
+            android:text=" Attractive "
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#69A9A9"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_content2"
+            app:layout_constraintTop_toBottomOf="@+id/text_content1"
+            android:layout_marginLeft="60dp"
+            android:text=" Gifts"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="#69A9A9"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+        <ViewFlipper
+            android:id="@+id/flio"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_content1"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/flio"
+               android:layout_marginTop="8dp"
+               tools:ignore="MissingConstraints">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btn7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle"
+                        android:text="Share"
+                        android:textColor="#000000" />
+
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Teddy"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Toys"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Cups"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Couple"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Frames"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/btn6"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:text="See All"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+           </LinearLayout>
+
+        <ViewFlipper
+            android:id="@+id/flier2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/l5"
+            tools:ignore="MissingConstraints" />
+
+
+      <Button
+          android:id="@+id/btn_featur"
+          android:layout_width="match_parent"
+          android:layout_height="120dp"
+          android:text="Featured  products"
+          tools:ignore="MissingConstraints"
+          android:background="@drawable/yohoooo"
+          android:fontFamily="@font/aclonica"
+          android:textSize="25dp"
+          android:layout_marginTop="5dp"
+          app:layout_constraintTop_toBottomOf="@+id/flier2"
+          />
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@+id/linear"
+            android:layout_marginTop="8dp"
+            tools:ignore="MissingConstraints"
+            >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="185dp"
+                        android:layout_height="190dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/showpiecefinal" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"
+                                android:text="GET"
+                                android:textColor="#980876"
+                                android:textSize="20dp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"
+                                android:text="upto 50% off"
+                                android:textColor="#980876"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="cursive"
+                                android:text="Exclusive Offer"
+                                android:textColor="#980876"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="185dp"
+                        android:layout_height="190dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/couplesfinalwale"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Flash Deals"
+                                android:textColor="#980876"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Offer Zone"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#898956"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Grab now"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="cursive"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="185dp"
+                        android:layout_height="190dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/wallclockfinal"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Exclusive Offer"
+                                android:textColor="#980876"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Grab it!"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#898956"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Order now "
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="cursive"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="185dp"
+                        android:layout_height="190dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/dolly"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Great Deals"
+                                android:textColor="#980876"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="At low prizes"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#898956"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hurry up"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="cursive"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="185dp"
+                        android:layout_height="190dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/molly"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Offer Zone"
+                                android:textColor="#980876"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Grab Now"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#898956"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Get your order now"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="cursive"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="185dp"
+                        android:layout_height="190dp"
+                        android:elevation="6dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/molly"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Get"
+                                android:textColor="#980876"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="upto 50-70% off"
+                                android:textSize="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#898956"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/aclonica"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="order now!"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="15dp"
+                                android:textColor="#000000"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="cursive"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_featur"
+            android:layout_marginTop="8dp"
+            tools:ignore="MissingConstraints">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/btn_new"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:text="New Collection"
+                        android:background="@drawable/btn_bg_selector"
+                        android:layout_marginLeft="5dp"
+                        tools:ignore="MissingConstraints"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_new1"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:text="Brand new products"
+                        android:layout_marginLeft="5dp"
+                        tools:ignore="MissingConstraints"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_new2"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:text="Offers on Toys"
+                        android:layout_marginLeft="5dp"
+                        tools:ignore="MissingConstraints"
+                        />
+                    <Button
+                        android:id="@+id/btn_new3"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:text="Top Collection"
+                        android:layout_marginLeft="5dp"
+                        tools:ignore="MissingConstraints"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/l3">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_new4"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:text="Special Discount"
+                android:layout_marginLeft="5dp"
+                tools:ignore="MissingConstraints"
+                />
+
+            <Button
+                android:id="@+id/btn_new5"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:text="Exciting Offers "
+                android:layout_marginLeft="5dp"
+                tools:ignore="MissingConstraints"
+                />
+
+            <Button
+                android:id="@+id/btn_new6"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:text="Deals and prizes"
+                android:layout_marginLeft="5dp"
+                tools:ignore="MissingConstraints"
+                />
+
+            <Button
+                android:id="@+id/btn_new7"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:text="Top rated products"
+                android:layout_marginLeft="5dp"
+                tools:ignore="MissingConstraints"
+                />
+        </LinearLayout>
+        </HorizontalScrollView>
+        </LinearLayout>
+
+
+        <ViewFlipper
+            android:id="@+id/flier3"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/l4"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.google.android.gms.ads.AdView
+            tools:ignore="MissingConstraints"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:layout_constraintTop_toBottomOf="@+id/toolbar"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-1493862650042827/8360972727">
+            </com.google.android.gms.ads.AdView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
